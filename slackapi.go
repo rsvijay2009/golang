@@ -23,7 +23,7 @@ type Profile struct {
 }
 func main() {
     
-    response, err := http.Get("https://slack.com/api/users.list?token=xoxp-383304169568-438690501488-643782417397-a862ff32fcab61e0f45362f7c5c7fa81&limit=1000&pretty=1")
+    response, err := http.Get("https://slack.com/api/users.list?token=SLACK_TOKEN&limit=1000&pretty=1")
     if err != nil {
 		fmt.Printf("The HTTP request failed with error %s\n", err)
     } else {
