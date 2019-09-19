@@ -16,6 +16,12 @@ func Diagonal(len, wid float64) float64 {
 
 //Perimeter to return the perimeter of a rectangle
 func Perimeter(len, wid float64) float64 {
+	perimeter := calculatePerimeter(len, wid)
+	return perimeter
+}
+
+//calculatePerimeter to calculate the perimeter of a rectangle
+func calculatePerimeter(len, wid float64) float64 {
 	perimeter := 2 * len * wid
 	return perimeter
 }
